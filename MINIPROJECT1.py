@@ -1,3 +1,4 @@
+
 ##WHAT READY PLAYER ONE AVATAR ARE YOU? - COURTNEY
 
 ##CREATING DICTIONARY
@@ -14,7 +15,7 @@ QUESTION2= {
             "question": "What are you most scared of?",
             "A) Scary Movies": "AECH",
             "B) Being imprisoned by IOI": "ART3MIS",
-            "C) Losing friendship": "PARZIVAL",
+            "C) Losing friends": "PARZIVAL",
             "D) Steampunk, Pirates and Tabbouleh": "Ir0k"
             }
 
@@ -52,19 +53,24 @@ QUESTION5_LIST= list(QUESTION5.keys())
 ##TIME FOR SLEEP COUNT
 import time
 
+
+##ANSWER COUNTS DEFINED
+answer_counts = {"A": 0, "B": 0, "C": 0, "D": 0}
+
+
 ##STARTING USER WELCOME INTERFACE
 print('       ')
-print("COMPLETE THIS QUIZ TO SEE WHICH") 
-print("* READY PLAYER ONE AVATAR *") 
+print("COMPLETE THIS QUIZ TO SEE WHICH")
+print("* READY PLAYER ONE AVATAR * ")
 print("         YOU ARE?")
 print('       ')
 time.sleep(2)
-print('       ')
-print("   WELCOME TO THE OASIS!") 
+print("    WELCOME TO THE OASIS! ")
 print("MY NAME IS ANORAK THE CREATOR")
+time.sleep(2)
 print('       ')
-print("BEFORE YOU CAN ROAM AROUND") 
-print("YOU NEED TO CHOOSE AN AVATAR!")
+print(" BEFORE YOU CAN ROAM AROUND")
+print("YOU NEED TO CHOOSE AN AVATAR")
 print('       ')
 time.sleep(4.5)
 
@@ -74,7 +80,7 @@ def playtostart():
         ready = input("ARE YOU READY? CHOOSE Y TO CONTINUE: ").upper()
         if ready == "Y":
             print('       ')
-            print("....READYING PLAYER ONE....")
+            print("......READYING PLAYER ONE......")
             break
         else:
             print("CHOOSE Y TO CONTINUE")
@@ -92,12 +98,11 @@ print(QUESTION1_LIST[3])
 print(QUESTION1_LIST[4])
 
 def Q1():
-    answer_counts = {"A": 0, "B": 0, "C": 0, "D": 0} ##COUNTER
+    global answer_counts
     while True:
         Q1ANSWER1 = input("PLAYER ONE>> ").upper()
-        if Q1ANSWER1 in ["A", "B", "C", "D"]:##COUNTER
-            answer_counts[Q1ANSWER1] += 1   ##COUNTER
-            print("....LOADING NEXT QUESTION....")
+        if Q1ANSWER1 in ["A", "B", "C", "D"]:
+            answer_counts[Q1ANSWER1] += 1
             print('       ')
             print('       ')
             time.sleep(1.5)
@@ -115,12 +120,11 @@ print(QUESTION2_LIST[3])
 print(QUESTION2_LIST[4])
 
 def Q2():
-    answer_counts = {"A": 0, "B": 0, "C": 0, "D": 0} ##COUNTER
+    global answer_counts
     while True:
         Q2ANSWER2 = input("PLAYER ONE>> ").upper()
-        if Q2ANSWER2 in ["A", "B", "C", "D"]:##COUNTER
-            answer_counts[Q2ANSWER2] += 1    ##COUNTER
-            print("....LOADING NEXT QUESTION....")
+        if Q2ANSWER2 in ["A", "B", "C", "D"]:
+            answer_counts[Q2ANSWER2] += 1
             print('       ')
             print('       ')
             time.sleep(1.5)
@@ -138,12 +142,11 @@ print(QUESTION3_LIST[3])
 print(QUESTION3_LIST[4])
 
 def Q3():
-    answer_counts = {"A": 0, "B": 0, "C": 0, "D": 0} ##COUNTER
+    global answer_counts
     while True:
         Q3ANSWER3 = input("PLAYER ONE>> ").upper()
-        if Q3ANSWER3 in ["A", "B", "C", "D"]: ##COUNTER
-            answer_counts[Q3ANSWER3] += 1 ##COUNTER
-            print("....LOADING NEXT QUESTION....")
+        if Q3ANSWER3 in ["A", "B", "C", "D"]:
+            answer_counts[Q3ANSWER3] += 1
             print('       ')
             print('       ')
             time.sleep(1.5)
@@ -161,12 +164,11 @@ print(QUESTION4_LIST[3])
 print(QUESTION4_LIST[4])
 
 def Q4():
-    answer_counts = {"A": 0, "B": 0, "C": 0, "D": 0}  ##COUNTER
+    global answer_counts
     while True:
         Q4ANSWER4 = input("PLAYER ONE>> ").upper()
-        if Q4ANSWER4 in ["A", "B", "C", "D"]:  ##COUNTER
-            answer_counts[Q4ANSWER4] += 1  ##COUNTER
-            print("....LOADING NEXT QUESTION....")
+        if Q4ANSWER4 in ["A", "B", "C", "D"]:
+            answer_counts[Q4ANSWER4] += 1
             print('       ')
             print('       ')
             time.sleep(1.5)
@@ -184,12 +186,11 @@ print(QUESTION5_LIST[3])
 print(QUESTION5_LIST[4])
 
 def Q5():
-    answer_counts = {"A": 0, "B": 0, "C": 0, "D": 0} ##COUNTER
+    global answer_counts
     while True:
         Q5ANSWER5 = input("PLAYER ONE>> ").upper()
-        if Q5ANSWER5 in ["A", "B", "C", "D"]: ##COUNTER
-            answer_counts[Q5ANSWER5] += 1 ##COUNTER
-            print('       ')
+        if Q5ANSWER5 in ["A", "B", "C", "D"]:
+            answer_counts[Q5ANSWER5] += 1
             print('       ')
             time.sleep(1.0)
             break
@@ -199,44 +200,29 @@ Q5()
 
 
 ##QUIZ COMPLETION
+print("....CALCULATING RESULTS....")
+time.sleep(2)
 print('       ')
-print("....CALCULATING PLAYER ONE RESULTS....")
-time.sleep(3)
 
+####CALCULATING RESULT
+AECH = answer_counts["A"]
+ART3MIS = answer_counts["B"]
+PARZIVAL = answer_counts["C"]
+Ir0k = answer_counts["D"]
 
-####CALCULATING RESULT?????????????????????????????????
-answer_counts = ["A, B, C, D"]
-
-AECH = 0
-ART3MIS = 0
-PARZIVAL = 0
-Ir0k = 0
-
-for answer in answer_counts:
-    if answer == "A":
-        AECH += 1
-    elif answer == "B":
-        ART3MIS += 1
-    elif answer == "C":
-        PARZIVAL += 1
-    elif answer == "D":
-        Ir0k += 1
-
-    if AECH == ART3MIS or AECH == PARZIVAL or AECH == Ir0k or ART3MIS == AECH or ART3MIS == PARZIVAL or ART3MIS == Ir0k or PARZIVAL == AECH or PARZIVAL == ART3MIS or PARZIVAL == Ir0k or Ir0k == AECH or Ir0k == ART3MIS or Ir0k == PARZIVAL:
-        print("YOU'VE BEEN ZEROED OUT BY A KILLER CHUCKY")
-        print("TRY AGAIN")
-        print("...CONNECTION TERMINATED...")
-    elif AECH > ART3MIS and AECH > PARZIVAL and AECH > Ir0k:
-        print("YOUR AVATAR IS AECH")
-        print("Welcome to my workshop...Touch Nothing")
-    elif ART3MIS > AECH and ART3MIS > PARZIVAL and ART3MIS > Ir0k:
-        print("YOUR AVATAR IS ART3MIS")
+if AECH > ART3MIS and AECH > PARZIVAL and AECH > Ir0k:
+        print('       ')
+        print(">> YOU'VE CHOSEN AECH")
+        print("Welcome to my workshop...Touch nothing")
+elif ART3MIS > AECH and ART3MIS > PARZIVAL and ART3MIS > Ir0k:
+        print('       ')
+        print(">> YOU'VE CHOSEN ART3MIS")
         print("Ah, yes...Goddess of the Hunt")
-    elif PARZIVAL > AECH and PARZIVAL > ART3MIS and PARZIVAL > Ir0k:
-        print("YOUR AVATAR IS PARZIVAL")
+elif PARZIVAL > AECH and PARZIVAL > ART3MIS and PARZIVAL > Ir0k:
+        print('       ')
+        print(">> YOU'VE CHOSEN PARZIVAL")
         print("People come to Oasis for all the things they can do but they stay because of the things they can be")
-    elif Ir0k > AECH and Ir0k > ART3MIS and Ir0k > PARZIVAL:
-        print("YOUR AVATAR IS Ir0k")
+elif Ir0k > AECH and Ir0k > ART3MIS and Ir0k > PARZIVAL:
+        print('       ')
+        print(">> YOU'VE CHOSEN Ir0k")
         print("For Real...you need to go to Physical Therapy")
-    else:
-        print("...CONNECTION TERMINATED...")
