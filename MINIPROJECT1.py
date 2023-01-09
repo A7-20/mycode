@@ -54,11 +54,17 @@ import time
 
 ##STARTING USER WELCOME INTERFACE
 print('       ')
-print("COMPLETE THIS QUIZ TO SEE WHICH * READY PLAYER ONE AVATAR * YOU ARE?")
+print("COMPLETE THIS QUIZ TO SEE WHICH") 
+print("* READY PLAYER ONE AVATAR *") 
+print("         YOU ARE?")
 print('       ')
 time.sleep(2)
-print("WELCOME TO THE OASIS! MY NAME IS ANORAK THE CREATOR")
-print("BEFORE YOU CAN ROAM AROUND YOU NEED TO CHOOSE AN AVATAR!")
+print('       ')
+print("   WELCOME TO THE OASIS!") 
+print("MY NAME IS ANORAK THE CREATOR")
+print('       ')
+print("BEFORE YOU CAN ROAM AROUND") 
+print("YOU NEED TO CHOOSE AN AVATAR!")
 print('       ')
 time.sleep(4.5)
 
@@ -91,7 +97,7 @@ def Q1():
         Q1ANSWER1 = input("PLAYER ONE>> ").upper()
         if Q1ANSWER1 in ["A", "B", "C", "D"]:##COUNTER
             answer_counts[Q1ANSWER1] += 1   ##COUNTER
-            print("LEVEL ONE COMPLETE")
+            print("....LOADING NEXT QUESTION....")
             print('       ')
             print('       ')
             time.sleep(1.5)
@@ -114,7 +120,7 @@ def Q2():
         Q2ANSWER2 = input("PLAYER ONE>> ").upper()
         if Q2ANSWER2 in ["A", "B", "C", "D"]:##COUNTER
             answer_counts[Q2ANSWER2] += 1    ##COUNTER
-            print("LEVEL TWO COMPLETE")
+            print("....LOADING NEXT QUESTION....")
             print('       ')
             print('       ')
             time.sleep(1.5)
@@ -137,7 +143,7 @@ def Q3():
         Q3ANSWER3 = input("PLAYER ONE>> ").upper()
         if Q3ANSWER3 in ["A", "B", "C", "D"]: ##COUNTER
             answer_counts[Q3ANSWER3] += 1 ##COUNTER
-            print("LEVEL THREE COMPLETE")
+            print("....LOADING NEXT QUESTION....")
             print('       ')
             print('       ')
             time.sleep(1.5)
@@ -160,7 +166,7 @@ def Q4():
         Q4ANSWER4 = input("PLAYER ONE>> ").upper()
         if Q4ANSWER4 in ["A", "B", "C", "D"]:  ##COUNTER
             answer_counts[Q4ANSWER4] += 1  ##COUNTER
-            print("LEVEL FOUR COMPLETE")
+            print("....LOADING NEXT QUESTION....")
             print('       ')
             print('       ')
             time.sleep(1.5)
@@ -183,7 +189,6 @@ def Q5():
         Q5ANSWER5 = input("PLAYER ONE>> ").upper()
         if Q5ANSWER5 in ["A", "B", "C", "D"]: ##COUNTER
             answer_counts[Q5ANSWER5] += 1 ##COUNTER
-            print("LEVEL FIVE COMPLETE")
             print('       ')
             print('       ')
             time.sleep(1.0)
@@ -225,7 +230,7 @@ for answer in answer_counts:
         print("YOUR AVATAR IS AECH")
         print("Welcome to my workshop...Touch Nothing")
     elif ART3MIS > AECH and ART3MIS > PARZIVAL and ART3MIS > Ir0k:
-        print("Your AVATAR IS ART3MIS")
+        print("YOUR AVATAR IS ART3MIS")
         print("Ah, yes...Goddess of the Hunt")
     elif PARZIVAL > AECH and PARZIVAL > ART3MIS and PARZIVAL > Ir0k:
         print("YOUR AVATAR IS PARZIVAL")
