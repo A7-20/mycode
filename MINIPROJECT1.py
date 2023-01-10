@@ -222,7 +222,7 @@ elif ART3MIS > AECH and ART3MIS > PARZIVAL and ART3MIS > Ir0k:
 elif PARZIVAL > AECH and PARZIVAL > ART3MIS and PARZIVAL > Ir0k:
         print('       ')
         print(">> YOU'VE CHOSEN PARZIVAL")
-        print("People come to Oasis for all the things they can do but they stay because of the things they can be")
+        print("People come to the  Oasis for all the things they can do but they stay because of all the things they can be")
 elif Ir0k > AECH and Ir0k > ART3MIS and Ir0k > PARZIVAL:
         print('       ')
         print(">> YOU'VE CHOSEN Ir0k")
