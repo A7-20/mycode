@@ -80,7 +80,7 @@ def playtostart():
         ready = input("ARE YOU READY? CHOOSE Y TO CONTINUE: ").upper()
         if ready == "Y":
             print('       ')
-            print("......READYING PLAYER ONE......")
+            print("<<<<<<READYING PLAYER ONE>>>>>>")
             break
         else:
             print("CHOOSE Y TO CONTINUE")
@@ -108,7 +108,7 @@ def Q1():
             time.sleep(1.5)
             break
         else:
-            print("404: COMPUTER SAYS NO")
+            print("404: SERVER SAYS NO")
 Q1()
 
 
@@ -130,7 +130,7 @@ def Q2():
             time.sleep(1.5)
             break
         else:
-            print("404: COMPUTER SAYS NO")
+            print("404: SERVER SAYS NO")
 Q2()
 
 
@@ -152,7 +152,7 @@ def Q3():
             time.sleep(1.5)
             break
         else:
-            print("404: COMPUTER SAYS NO")
+            print("404: SERVER SAYS NO")
 Q3()
 
 
@@ -174,7 +174,7 @@ def Q4():
             time.sleep(1.5)
             break
         else:
-            print("404: COMPUTER SAYS NO")
+            print("404: SERVER SAYS NO")
 Q4()
 
 
@@ -195,12 +195,13 @@ def Q5():
             time.sleep(1.0)
             break
         else:
-            print("404: COMPUTER SAYS NO")
+            print("404: SERVER SAYS NO")
 Q5()
 
 
+
 ##QUIZ COMPLETION
-print("....CALCULATING RESULTS....")
+print("<<<<CALCULATING RESULTS>>>>")
 time.sleep(2)
 print('       ')
 
@@ -226,3 +227,7 @@ elif Ir0k > AECH and Ir0k > ART3MIS and Ir0k > PARZIVAL:
         print('       ')
         print(">> YOU'VE CHOSEN Ir0k")
         print("For Real...you need to go to Physical Therapy")
+else:
+        print("MAYBE THIS ISN'T YOUR THING")
+        print("        TRY AGAIN")
+
